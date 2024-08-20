@@ -13,6 +13,6 @@ public class Converter {
         /**
          * Assuming the conversion rate is 1 Dollar = 75 Rubles
          */
-        return -1;
+        return value / 60;
     }
 }
