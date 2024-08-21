@@ -30,4 +30,12 @@ class VectorTest {
         String output = Vector.addVectors(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void whenVectorsMinus56AndMinus34ThenResultMinus78() {
+        int x1 = -5, y1 = -6, x2 = -7, y2 = -8;
+        String expected = "(-12, -14)";
+        String output = Vector.addVectors(x1, y1, x2, y2);
+        assertThat(output).isEqualTo(expected);
+    }
 }
