@@ -24,7 +24,7 @@ public class Counter {
     public static int sumByEven(int start, int finish) {
         int sum = 0;
         if (start <= finish) {
-            for (int i = 0; i <= finish ; i++) {
+            for (int i = 0; i <= finish; i++) {
                 if (i % 2 == 0) {
                     sum += i;
                 }
