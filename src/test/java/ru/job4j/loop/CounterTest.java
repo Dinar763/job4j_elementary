@@ -53,11 +53,11 @@ class CounterTest {
     }
 
     @Test
-    void whenSumEvenNumbersFrom3To8ThenTwenty() {
+    void whenSumEvenNumbersFrom3To8ThenEightteen() {
         int start = 3;
         int finish = 8;
         int result = Counter.sumByEven(start, finish);
-        int expected = 20;
+        int expected = 18;
         assertThat(result).isEqualTo(expected);
     }
 
@@ -71,11 +71,11 @@ class CounterTest {
     }
 
     @Test
-    void whenSumEvenNumbersFromMinusFiveToTenThenThirteen() {
+    void whenSumEvenNumbersFromMinusFiveToTenThenTwentyFour() {
         int start = -5;
         int finish = 10;
         int result = Counter.sumByEven(start, finish);
-        int expected = 30;
+        int expected = 24;
         assertThat(result).isEqualTo(expected);
     }
 }
