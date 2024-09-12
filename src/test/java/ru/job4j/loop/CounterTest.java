@@ -20,7 +20,7 @@ class CounterTest {
     void sumWhenStart3Finish8() {
         int start = 3;
         int finish = 8;
-        int expected = 36;
+        int expected = 33;
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
