@@ -9,19 +9,13 @@ public class TwoNumberSum {
             if (array[i] + array[j] == target) {
                 targArray[0] = i;
                 targArray[1] = j;
-                break;
+                return targArray;
             } else if (array[i] + array[j] < target) {
                 i++;
             } else {
                 j--;
             }
         }
-        return (targArray[1] != 0) ? targArray : new int[0];
-    }
-
-    public static void main(String[] args) {
-        int[] array = {-7, -5, 0, 5, 8, 12};
-        int target = 3;
-        getIndexes(array, target);
+        return  new int[0];
     }
 }
