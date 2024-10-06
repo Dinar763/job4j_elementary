@@ -9,7 +9,6 @@ class PointTest {
     void whenPoints00And20Then2() {
         Point a = new Point(0, 0);
         Point b = new Point(2, 0);
-        int x1 = 0, y1 = 0, x2 = 2, y2 = 0;
         double expected = 2.0;
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
@@ -29,6 +28,24 @@ class PointTest {
         Point a = new Point(-2, -2);
         Point b = new Point(2, 2);
         double expected = 5.66;
+        double output = a.distance(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenPoints010And050Then4() {
+        Point a = new Point(0, 1, 0);
+        Point b = new Point(0, 5, 0);
+        double expected = 4.0;
+        double output = a.distance3d(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenPointsMinus2Minus2Minus2And2And2And2Then5Dot66() {
+        Point a = new Point(-2, -2, -2);
+        Point b = new Point(2, 2, 2);
+        double expected = 5.657;
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
